@@ -14,5 +14,5 @@ document.getElementById('survey-form').addEventListener('submit', function(event
     console.log('Mitigation Actions:', mitigationActions);
     console.log('Mitigation Suggestions:', mitigationSuggestions);
 
-    // Optionally, send this data to a server or store it as needed (e.g., using fetch or AJAX).
+    // Optionally, send this data to a server or store it as needed (e.g., using fetch AJAX).
 });
