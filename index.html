@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bias in AI detectors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>AI Bias in Education Survey</h1>
+        <p>We are gathering feedback from educators on the bias of AI detectors toward non-native English speakers. Please share your thoughts.</p>
+    </header>
+
+    <main>
+        <!-- Question 1: Multiple Choice -->
+        <section>
+            <h2>As an educator, have you realized that the bias in current AI detectors towards non-native English speakers will unfairly penalize the students who are non-native English speakers (i.e., flag their creations as AI-generated incorrectly)?</h2>
+            <form id="survey-form">
+                <label>
+                    <input type="radio" name="bias-awareness" value="Yes" required> Yes
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="bias-awareness" value="Haven’t yet"> Haven’t yet
+                </label>
+        </section>
+
+        <!-- Question 2: Open-ended -->
+        <section>
+            <h2>If you realized this bias, what have you done to mitigate it?</h2>
+            <textarea name="mitigation-actions" rows="4" placeholder="Type your idea here..." required></textarea>
+        </section>
+
+        <!-- Question 3: Open-ended -->
+        <section>
+            <h2>What do you think educators should do to mitigate the bias?</h2>
+            <textarea name="mitigation-suggestions" rows="4" placeholder="Type your idea here..." required></textarea>
+        </section>
+
+        <!-- Submit Button -->
+        <section>
+            <button type="submit">Submit</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Thank you for participating in this survey!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
