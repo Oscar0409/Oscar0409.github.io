@@ -7,12 +7,18 @@ document.getElementById('survey-form').addEventListener('submit', function(event
     const mitigationActions = document.querySelector('textarea[name="mitigation-actions"]').value;
     const mitigationSuggestions = document.querySelector('textarea[name="mitigation-suggestions"]').value;
 
-    // Display confirmation message and submitted data in the console (can be modified for actual submission)
+    // Display confirmation message
     alert('Thank you for your submission! Your responses have been recorded.');
 
     console.log('Bias Awareness:', biasAwareness);
     console.log('Mitigation Actions:', mitigationActions);
     console.log('Mitigation Suggestions:', mitigationSuggestions);
 
-    // Optionally, send this data to a server or store it a needed (e.g., using fetch AJAX).
+    // Redirect based on the answer to the first question
+    if (biasAwareness === 'Yes') {
+        window.location.href = 'AI_Bias.pdf';  // Redirect to Ai_biased.html
+    } else if (biasAwareness === 'Haven’t yet') {
+        window.location.href = 'Good_job.pdf';  // Redirect to Good_job.html
+    }
 });
+
