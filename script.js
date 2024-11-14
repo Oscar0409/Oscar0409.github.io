@@ -16,7 +16,7 @@ document.getElementById('survey-form').addEventListener('submit', function(event
 
     // Redirect based on the answer to the first question
     if (biasAwareness === 'Yes') {
-        window.location.href = 'AI_Bias.pdf';  // Redirect to Ai_biased.html
+        window.location.href = 'educatorFull.html';  // Redirect to Ai_biased.html
     } else if (biasAwareness === 'Haven’t yet') {
         window.location.href = 'Good_job.pdf';  // Redirect to Good_job.html
     }
