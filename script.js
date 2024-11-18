@@ -15,9 +15,9 @@ document.getElementById('survey-form').addEventListener('submit', function(event
     console.log('Mitigation Suggestions:', mitigationSuggestions);
 
     // Redirect based on the answer to the first question
-    if (biasAwareness === 'Yes') {
+    if (biasAwareness === 'Haven’t yet') {
         window.location.href = 'educatorFull.html';  // Redirect to Ai_biased.html
-    } else if (biasAwareness === 'Haven’t yet') {
+    } else if (biasAwareness === 'Yes') {
         window.location.href = 'Good_job.pdf';  // Redirect to Good_job.html
     }
 });
