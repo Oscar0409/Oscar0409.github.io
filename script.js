@@ -18,7 +18,7 @@ document.getElementById('survey-form').addEventListener('submit', function(event
     if (biasAwareness === 'Haven’t yet') {
         window.location.href = 'educatorFull.html';  // Redirect to Ai_biased.html
     } else if (biasAwareness === 'Yes') {
-        window.location.href = 'Good_job.pdf';  // Redirect to Good_job.html
+        window.location.href = 'educatorPart.html';  // Redirect to Good_job.html
     }
 });
 
