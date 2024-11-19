@@ -8,7 +8,7 @@ document.getElementById('survey-form').addEventListener('submit', function(event
     const mitigationSuggestions = document.querySelector('textarea[name="mitigation-suggestions"]').value;
 
     // Display confirmation message
-    alert('Thank you for your submission! Your responses have been recorded.');
+    alert('Thank you for your submission!');
 
     console.log('Bias Awareness:', biasAwareness);
     console.log('Mitigation Actions:', mitigationActions);
